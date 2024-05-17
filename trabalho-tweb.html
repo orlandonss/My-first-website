@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--trabalho-tweb.scss-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal com ACNUR|Agência de apoioS</title>
+    <link rel="stylesheet" href="trabalho-tweb.css">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="logo_acnur_pt_azul_1.png" alt="logo_unhcr" class="logo_header">
+        <nav class="sandwich">
+            <a class="donativo spacing" href="https://pacnur.org/node/6320"> <span>FAZER DONATIVO</span></a>
+            <h3 class="textmenu spacing">MENU</h3>
+            <label for="toggle" id="sammich">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+
+            <ul class="menu">
+                <li>
+                    <div class="close-menu">FECHAR</div>
+                    <ul>
+                        <li><a>+ O que é o ACNUR</a>
+                        </li>
+                        <li><a>+ Como ajudar</a></li>
+                        <li><a>+ Onde estamos</a></li>
+                        <li><a>+ Construir o futuro</a></li>
+                        <li><a>+ Atualidade</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="background-img">
+        <div class="texto-background-img">
+            <h1>Não é uma fase, é uma<p>vida</p>
+            </h1>
+            <h3>Ser deslocado não é uma situação passageira, mas sim duradoura, que
+                <span>se pode prolongar por décadas ou até mesmo gerações completas</span>
+            </h3>
+        </div>
+        <img src="landing page natal (1).png" alt="background img">
+    </div>
+
+    <div class="form-doar">
+        <div id="background">
+            <h3 id="top">MENSAL
+                <label class="switch">
+                    <input type="checkbox" id="donate-type" value="1">
+                    <span class="slider"></span>
+                </label> 
+                <span>PONTUAL</span>
+            </h3>
+        </div>
+        <div id="mensal">
+            <div class="row-identity">
+                <div class="box" id="amount1" value="10"><h2 class="bigger">10 $</h2><span class="month" value="10">por mês</span></div>
+                <div class="box" id="amount2" value="15"><h2 class="bigger">15 $</h2><span class="month">por mês</span></div>
+            </div>
+            <div class="row-identity">
+                <div class="box" id="amount3" value="25"><h2 class="bigger">25 $</h2><span class="month">por mês</span></div>
+                <div class="box" id="amount4" value="0"><input type="text" value="" inputmode="numeric" class="bigger month" id="costum_amount" placeholder="Outra quantidade"></div>
+            </div>
+        </div>
+        <div id="pontual">
+            <div class="row-identity ">
+                <div class="box" id="amount5" value="31"><h2 class="bigger">20 $</h2><span class="month">por mês</span></div>
+                <div class="box" id="amount6" value="80"><h2 class="bigger">40 $</h2><span class="month">por mês</span></div>
+            </div>
+            <div class="row-identity">
+                <div class="box" id="amount7" value="280"><h2 class="bigger">80 $</h2><span class="month">por mês</span></div>
+                <div class="box" id="amount8" value="0"><input type="text" value="" inputmode="numeric" class="bigger month" id="costum_amount" placeholder="Outra quantidade"></div>
+            </div>
+        </div>
+        <div class="month" id="text-value"></div>
+        <div class="flex">
+            <div class="text-priv">
+                <input type="checkbox" id="politicaPrivacidade" value="0"> 
+                <span>Li e aceito a <a href="https://pacnur.org/pt/politica-privacidade">politica de privacidade</a></span>
+            </div>
+            <br>
+            <div id="donate-source">
+                <input type="checkbox" value="0" id="empresa">Empresa
+                <div id="empresa-form">
+                    Nome:
+                    <input type="text" placeholder="introduza o nome aqui" id="pNome" value="">
+                    Numero: 
+                    <input type="number" placeholder="introduza o numero de telemovel/telefone aqui" id="numero" value="">
+                    NIF: 
+                    <input type="number" placeholder="introduza o NIF aqui" id="NIF" value="">
+                </div>
+                <input type="checkbox" value="0" id="particular">Particular
+                <div id="particular-form">
+                    Primeiro Nome:
+                    <input type="text" placeholder="introduza o nome aqui" id="pNome2" value="">
+                    Ultimo Nome:
+                    <input type="text" placeholder="introduza o apelido aqui" id="uNome2" value="">
+                    Numero: 
+                    <input type="number" placeholder="introduza o numero de telemovel/telefone aqui" id="numero2" value="">
+                    NIF: 
+                    <input type="number" placeholder="introduza o NIF aqui" id="NIF2" value="">
+                    Email: 
+                    <input type="email" placeholder="introduza um email aqui" id="email-bar2">
+                </div>
+            </div>
+            <button type="submit" class="donate spacing" id="button-doar"> DOAR AGORA</button>
+        </div>
+    </div>
+    <div class="exterior-p">
+        <div class="pnecessitados">
+               <div class="pnecessitado1">
+                   <img src="emergencia_ukrania.jpg">
+                   <div class="texto">
+                       <p>EMERGÊNCIAS</p>
+                       <h2>Emergência Ukrania</h2>
+                       <a href="https://pacnur.org/pt/donativos/ucrania"><button>FAZER DONATIVO</button></a>
+                   </div>
+               </div>
+   
+               <div class="pnecessitado2">
+                   <img src="emegencia_afeganistao.jpg">
+                   <div class="texto">
+                       <p >EMERGÊNCIAS</p>
+                       <h2>Emergência Afeganistão</h2>
+                       <a href="https://pacnur.org/pt/donativos/afeganistao"><button>FAZER DONATIVO</button></a>
+                   </div>
+               </div>
+   
+               <div class="pnecessitado3">
+                   <img src="emergencia_moçambique.jpg">
+                   <div class="texto">
+                       <p>EMERGÊNCIAS</p>
+                       <h2>Moçambique, a "Emergencia Invisível"</h2>
+                       <a href="https://pacnur.org/pt/donativos/mocambique"><button>FAZER DONATIVO</button></a>
+                   </div>
+               </div>
+       </div> 
+   </div>
+   <div class="vermais-car">
+       <a href="https://pacnur.org/pt/onde-estamos/emergencias"><button>VER MAIS</button></a>
+   </div>
+   
+       <div class="mulheresrefugiadas-box">
+           <img src="mulheres_refugiadas.jpg">
+           <div class="texto">
+               <span>Emergência</span>
+               <p>114 milhões de mulheres refugiadas no mundo</p>
+               <div class="interact-donativos">
+            <a  href="https://pacnur.org/pt/como-ajudar/donativo-pontual"> <button class="donativo">DOAR AGORA</button></a>
+                 <a  href="https://pacnur.org/pt/como-ajudar/donativo-regular"><button  class="donativo-cor">DOAR REGURLAMENTE</button></a>
+               </div>
+           </div>
+       </div>
+       <div class="compromisso-acnur">
+           <div class="media-compromisso">
+               <h1>O compromisso do ACNUR: ajudar os refugiados</h1>
+   
+               <p>110 milhões de pessoas em todo o mundo foram obrigadas a fugir das suas casas.</p>
+               <p>O ACNUR presta-lhes assistência, proteção e ajuda.</p>
+              <a href="https://pacnur.org/pt/como-ajudar/donativo-regular"> <button>FAÇA PARTE DA MISSÃO > </button></a>
+   
+           </div>
+           <div class="contagem">
+               <div id="contagem-1">
+                   <div>
+                       <span>110</span>
+                       <div>
+                           <p>milhões de pessoas deslocadas à força. </p>
+                       </div>
+                   </div>
+               </div>
+               <div id="contagem-2">
+                   <div>
+                       <span>+135</span>
+                       <div>
+                           <p> países têm uma presença ativa do ACNUR.</p>
+                       </div>
+                   </div>
+               </div>
+               <div id="contagem-3">
+                   <div>
+                       <span>72</span>
+                       <div>
+                           <p>horas são suficientes para enviar ajuda para qualquer parte do mundo.
+                           <p>
+                       </div>
+                   </div>
+               </div>
+   
+           </div>
+       </div>
+       <h1> Como pode ajudar os refugiados?</h1>
+       <div class="info-donativos">
+           <div class="left">
+               <div class="parte-1">
+                   <img src="download.png">
+                   <div>
+                       <h3><a href="https://pacnur.org/pt/como-ajudar/donativo-pontual" target="">Donativo Pontual</a></h3>
+                       <p>110 milhoes de pessoas precisam de ajuda.O seu donativo é importante para manter a família
+                           bem.
+                       </p>
+                   </div>
+               </div>
+               <div class="parte-2">
+                   <img src="Alianças com Impacto Web.png">
+                   <div>
+                       <h3><a href="https://pacnur.org/pt/aliancas-estrategicas" target="">Alianças estratégicas</a></h3>
+                       <p>A sua organização pode fazer a diferença no trabalho do ACNUR.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="right">
+               <div class="parte-3">
+                   <img src="Acordo Web.png">
+                   <div>
+                       <h3><a href="https://pacnur.org/pt/como-ajudar/donativo-regular" target="">Tornar-se doador regular</a></h3>
+                       <p>Ao tornar-se um doador regular, contribui mensalmente para emergências humanitárias e
+                           soluções
+                           duradouras.</p>
+                   </div>
+               </div>
+               <div class="parte-4">
+                   <img src="ACNUR.png">
+                   <div>
+                       <h3><a href="https://pacnur.org/pt/como-ajudar/outras-formas-de-doar" target="">Mais formas de ajudar</a></h3>
+                       <p>São muitas as formas que pode ajudar as famílias refugiadas. Fique a saber mais.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <div class="zonas-acao">
+           <div id="info">
+               <img src="map_0.jpg">
+               <div id="espacamento-divisao">
+                   <h2>Onde trabalhamos</h2>
+                   <p>ACNUR garante proteção e assistência às vítimas que fogem de violência, conflitos,
+                       perseguição, violações
+                       de direitos humanos e/ou dos efeitos das alterações climáticas em todo o mundo.</p>
+                   <div id="locais">
+                       <a href="https://pacnur.org/pt/onde-estamos/acnur-no-mundo/africa">
+                           <p>Africa</p>
+                       </a>
+                       <a href="https://pacnur.org/pt/onde-estamos/acnur-no-mundo/mediterraneo">
+                           <p>Mediterraneo</p>
+                       </a>
+                       <a href="https://pacnur.org/pt/onde-estamos/acnur-no-mundo/medio-oriente">
+                           <p>Medio oriente</p>
+                       </a>
+                   </div>
+                   <div class="ver-zonas">
+                      <a href="https://pacnur.org/pt/acnur-no-mundo/zonas-de-trabalho"><button>VER TODAS AS ZONAS</button></a> 
+                   </div>
+               </div>
+           </div>
+       </div>
+       <section>
+           <div class="slidesimage-container">
+               <div class="imageslider fade">
+                   <p class="sizing">"Ninguém escolhe ser um refugiado. Ser sujeito a violência ou perseguição por ser
+                       quem
+                       é. Ou apanhado
+                       num conflito do qual se deve fugir, forçado a viver com a angústia do exílio."</p>
+                   <div class="text-author">Filippo Grandi Comissário das Nações Unidas para refúgios</div>
+               </div>
+               <div class="imageslider fade">
+                   <p class="sizing">"Aqueles que já estão a ficar para trás, ficarão ainda mais para trás. As
+                       perturbações
+                       climáticas já
+                       estão a causar deslocações em todo o mundo."</p>
+                   <div class="text-author">António Guterres, Secretário-geral das Nações Unidas</div>
+               </div>
+               <a class="anterior" onclick="SlideSeguinte(-1)">&#10094;</a>
+               <a class="seguinte" onclick="SlideSeguinte(1)">&#10095;</a>
+           </div>
+           <br>
+           <div class="pontos">
+               <span class="ponto1" onclick="SlideAtual(1)"></span>
+               <span class="ponto2" onclick="SlideAtual(2)"></span>
+           </div>
+       </section>
+       <div class="formatacao">
+           <div class="img-desastre">
+               <a href="https://pacnur.org/pt/atualidade/noticias/emergencias/acnur-deslocacoes-forcadas-continuam-aumentar-com-escalada-dos-conflitos"
+                   target="">
+                   <img src="deslocacoes.jpg">
+   
+                   <h2>ACNUT: As deslocações forçadas continuam a aumentar com a escalada dos conflitos</h2>
+               </a>
+               <p>A guerra e a violência levam a um numero global de deslocação estimado a 114 milhões, no final
+                   de setembro
+                   de 2023.</p>
+               <span>27 de outubro, 2023</span>
+               <a href="https://pacnur.org/pt/atualidade/noticias/emergencias/acnur-deslocacoes-forcadas-continuam-aumentar-com-escalada-dos-conflitos"
+                   target="">
+                   <p><span>Ler mais... </span></p>
+               </a>
+           </div>
+           <div class="img-desastre">
+               <a href="https://pacnur.org/pt/atualidade/noticias/comunicados-de-imprensa/afegaos-de-luto-apos-terramoto-mortal"
+                   target="">
+                   <img src="afegaos.jpg">
+                   <h2>Afegãos de luto após terramoto mortal</h2>
+               </a>
+               <p>Após a perda de centenas de vidas e a destruição de casas numa única aldeia da província de
+                   Herat, o ACNUR
+                   apressou a ajuda aos sobreviventes.</p>
+               <span>18 de outubro, 2023</span>
+               <a href="https://pacnur.org/pt/atualidade/noticias/comunicados-de-imprensa/afegaos-de-luto-apos-terramoto-mortal"
+                   target="">
+                   <p><span>Ler mais...</span></p>
+               </a>
+           </div>
+   
+           <div class="img-desastre">
+               <a href="https://pacnur.org/pt/atualidade/noticias/historias-de-vida/casas-partidas-espiritos-inquebraveis-apoio-pessoas-deslocadas-com-documentacao"
+                   target="">
+                   <img src="partidos.jpg">
+                   <h2>Casas partidas, espíritos inquebráveis: Apoio às pessoas deslocadas com documentação</h2>
+               </a>
+               <p> Maria, 66 anos, é natural da cidade de Kharkiv, no nordeste da Ucrânia. Foi uma das primeiras
+                   grandes
+                   cidades a ser objeto de bombardeamentos pesados nos primeiros dias da invasão.</p>
+               <span>16 de outubro, 2023</span>
+               <a href="https://pacnur.org/pt/atualidade/noticias/historias-de-vida/casas-partidas-espiritos-inquebraveis-apoio-pessoas-deslocadas-com-documentacao"
+                   target="">
+                   <p><span>Ler mais...</span></p>
+               </a>
+           </div>
+       </div>
+       <form>
+           <div class="informacao">
+               <p>Quer estar mais informado?</p>
+               <p>Receba informação sobre os refugiados e o trabalho do ACNUR</p>
+               <label id="email">
+                   <input type="email" href="mailto:" placeholder="introduza o seu e-mail">
+                   <a href="https://pacnur.org/pt/obrigado-por-subscrever-newsletter"><button class="inscrever">INSCREVER</button></a>
+               </label>
+               <br>
+               <label>
+                   <div class="check-informacao">
+                       <input type="checkbox" required> <span>li e aceito a política de
+                           <span>privacidade.</span></span>
+                   </div>
+               </label>
+           </div>
+       </form>
+       <footer>
+           <div class="pacnur-logo">
+               <a href="https://pacnur.org/pt" target="" class="c_comercial">
+                   <img src="logo_acnur_pt_azul_1.png">
+                   <p id="formatacao-ano"><span>©</span>2023</p>
+               </a>
+           </div>
+           <div class="curiosidades">
+               <ul>
+                   <a href="" target="">
+                       <p> Como ajudar </p>
+                   </a>
+                   <a href="https://pacnur.org/pt/como-ajudar/donativo-regular" target="">
+                       <li>Donativo Regular</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/como-ajudar/donativo-pontual" target="">
+                       <li>Donativo pontual</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/donativo-empresas-e-organizacoeshttps://pacnur.org/pt/donativo-empresas-e-organizacoes"
+                       target="">
+                       <li>Doar como empresa</li>
+                   </a>
+   
+                   <a href="https://pacnur.org/pt/como-ajudar/grandes-donativos" target="">
+                       <li>Grandes Donativos</li>
+                   </a>
+               </ul>
+               <ul>
+                   <a href="" target="">
+                       <p> O que é o ACNUR </p>
+                   </a>
+                   <a href="https://pacnur.org/pt/sobre-nos/portugal-com-acnur" target="">
+                       <li>Portugal com ACNUR</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/nossa-equipa" target="">
+                       <li>Equipa</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/informacoes/transparencia" target="">
+                       <li>Transparência</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/informacoes/contactos" target="">
+                       <li>Contactos</li>
+                   </a>
+               </ul>
+               <ul>
+                   <p> Atualidade </p>
+                   <a href="https://pacnur.org/pt/atualidade/noticias" target="">
+                       <li>Noticias</li>
+                   </a>
+                   <a href="https://pacnur.org/pt/atualidade/publicacoes" target="">
+                       <li>Revistas</li>
+                   </a>
+               </ul>
+               <ul>
+                   <p> Trabalhar conosco </p>
+                   <a href="https://pacnur.org/pt/projeto-face-to-face" target="">
+                       <li>Face to Face Vagas</li>
+                   </a>
+               </ul>
+           </div>
+       </footer>
+       <div class="rodape">
+           <div class="icones">
+               <a href="https://www.facebook.com/PortugalcomACNUR/" target="_blank"><img src="icon-facebook.png"></a>
+               <a href="https://www.instagram.com/portugalcomacnur/" target="_blank"><img src="icon-instagram.png"></a>
+               <a href="https://www.youtube.com/@portugalcomacnur" target="_blank"><img src="icon-youtube.png"></a>
+               <a href="https://es.linkedin.com/company/portugalcomacnur" id="linkedin" target="_blank"><img src="icon-linkedin.png"></a>
+           </div>
+           <div class="politicas">
+               <div id="P1">
+                   Política de privacidade
+               </div>
+               <div id="P2">
+                    Política de segurança
+               </div>
+               <div id="P3">
+                   Perguntas frequentes
+               </div>
+           </div>
+       </div>
+       <script src="zimage_slider.js"></script>
+    <script type="text/javascript" src="trabalho-tweb.js"></script>
+</body>
+<!--href="pacnur.org/eacnur-donation-form"-->
+</html>

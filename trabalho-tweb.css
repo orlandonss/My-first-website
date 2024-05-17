@@ -1,0 +1,329 @@
+body {
+  color: #222;
+  font-family: Proxima-Nova-Regular, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.spacing {
+  padding: 0 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+}
+header .logo_header {
+  padding: auto;
+  padding-left: 5em;
+  margin-right: auto;
+  height: 12vh;
+}
+header .sandwich {
+  margin: 1vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+header .sandwich .textmenu {
+  margin: auto 1em;
+  z-index: -2;
+}
+header .sandwich .donativo {
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #00e600;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 3vh;
+  color: white;
+}
+header .sandwich #sammich {
+  padding: 0.8em 0;
+  order: 6;
+}
+header .sandwich #toggle {
+  display: none;
+  z-index: 3;
+}
+header .sandwich #toggle:checked + .menu {
+  display: block;
+}
+header .sandwich li {
+  list-style-type: none;
+  margin: 15vh -30px;
+}
+header .sandwich .menu {
+  margin: 0;
+  display: none;
+  background-color: white;
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+header .sandwich .close-menu {
+  position: absolute;
+  right: 5em;
+  top: 2.2em;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.form-doar {
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 50%;
+  background-color: white;
+}
+.form-doar #top {
+  display: flex;
+  justify-content: center;
+}
+.form-doar #top .switch {
+  position: relative;
+  display: inline-block;
+  width: 5vh;
+  height: 3vh;
+  background-color: blue;
+  border-radius: 50px;
+  margin: 0 1%;
+}
+.form-doar #top .switch input {
+  display: none;
+}
+.form-doar #top .switch input:checked + .slider::before {
+  transform: translateX(-2.5vh);
+}
+.form-doar #top .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.form-doar #top .switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 3vh;
+  width: 3vh;
+  left: 2.3vh;
+  top: -1px;
+  background-color: white;
+  border: 1px black solid;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.form-doar #pontual {
+  display: block;
+}
+.form-doar #mensal {
+  display: none;
+}
+.form-doar #costum_amount {
+  color: blue;
+  height: 10vh;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
+.form-doar #costum_amount::-moz-placeholder {
+  color: blue;
+}
+.form-doar #costum_amount::placeholder {
+  color: blue;
+}
+.form-doar .row-identity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1% 0;
+}
+.form-doar .row-identity .box {
+  background-color: transparent;
+  border-radius: 15px;
+  width: 23vw;
+  display: flex;
+  padding: 0 0;
+  color: blue;
+  flex-direction: column;
+  justify-content: center;
+  background-color: beige;
+  cursor: pointer;
+}
+.form-doar .row-identity .box .bigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bolder;
+  color: blue;
+}
+.form-doar .row-identity .box .month {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.form-doar .month {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: beige;
+  padding: 4vh 0;
+  border-radius: 15px;
+}
+
+#donate-source {
+  display: none;
+  position: relative;
+}
+#donate-source #empresa-form {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  padding: 10% 0;
+}
+#donate-source input {
+  width: 20%;
+  margin: 1% 0;
+}
+#donate-source #particular-form {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  padding: 10% 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex .text-priv {
+  color: #878787;
+}
+.flex .text-priv a {
+  color: #878787;
+}
+.flex .text-priv a:hover {
+  color: lightblue;
+}
+.flex .donate {
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 25vw;
+  padding: 3vh 0;
+  z-index: 100;
+}
+
+.background-img {
+  position: relative;
+  margin: 0;
+}
+.background-img .texto-background-img {
+  z-index: 1;
+  color: white;
+  margin: 10% auto;
+  width: 70%;
+}
+.background-img .texto-background-img h3 {
+  text-align: center;
+}
+.background-img .texto-background-img h1 {
+  font-weight: bold;
+  font-size: 55px;
+  text-align: center;
+}
+.background-img img {
+  position: absolute;
+  left: -2%;
+  top: -50%;
+  width: 103.5%;
+  height: 700px;
+  z-index: -10;
+  padding-bottom: 30vh;
+  border-radius: 0 0 300px 300px;
+}
+
+#text-value {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .textmenu {
+    display: none;
+  }
+  header .logo_header {
+    padding-left: 5vw;
+    height: 5vh;
+  }
+  header .sandwich .menu {
+    width: 50%;
+  }
+  header .sandwich .donativo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em 3em;
+  }
+  .background-img {
+    width: 102%;
+  }
+  .background-img .texto-background-img {
+    font-size: small;
+    width: 100%;
+  }
+  .background-img .texto-background-img h1 {
+    padding-top: 40%;
+    font-size: 35px;
+  }
+  .form-doar #top {
+    font-size: small;
+    justify-content: space-between;
+  }
+  .form-doar #top .switch input:checked + .slider::before {
+    transform: translateX(-2vw);
+  }
+  .form-doar #top .switch .slider::before {
+    left: 1vw;
+  }
+}/*# sourceMappingURL=trabalho-tweb.css.map */

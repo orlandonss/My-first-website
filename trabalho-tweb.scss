@@ -1,0 +1,369 @@
+body {
+    color: #222;
+    font-family: Proxima-Nova-Regular, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.spacing{
+    padding: 0 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 1vh 0;
+
+    .logo_header {
+        padding: auto;
+        padding-left: 5em;
+        margin-right: auto;
+        height: 12vh;
+    }
+
+    
+
+    .sandwich {
+        margin: 1vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .textmenu {
+            margin: auto 1em;
+            z-index: -2;
+        }
+    
+        .donativo {
+            z-index: 100;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: lighten($color: green, $amount: 20);
+            border-radius: 5px;
+            padding: 1em 2em;
+            height: 3vh;
+            color: white;
+        }
+
+        #sammich{
+            padding: .8em 0;
+            order: 6;
+        }
+
+        #toggle {
+            display: none;
+            z-index: 3;
+
+            &:checked{
+                &+.menu{
+                    display: block;
+                }
+                
+            }
+        }
+
+        li {
+            list-style-type: none;
+            margin: 15vh -30px;
+        }
+
+        .menu {
+            margin: 0;
+            display: none;
+            background-color: white;
+            height: 100vh;
+            width: 30vw;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: -1;
+
+        }
+
+        .close-menu {
+            position: absolute;
+            right: 5em;
+            top: 2.2em;
+            margin: 0;
+            font-weight: bolder;
+
+        }
+    }
+}
+
+.form-doar {
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 50%;
+    background-color: white;
+    #top{
+        display: flex;
+        justify-content: center;
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 5vh;
+            height:3vh;
+            background-color: blue;
+            border-radius: 50px;
+            margin: 0 1%;
+
+            input{
+                display: none;
+                &:checked + .slider::before
+                {
+                    transform: translateX(-2.5vh);
+                }
+            }
+
+            .slider{
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                left: 0;
+                background-color: black;
+                transition: .4s;
+                border-radius: 34px;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    height: 3vh;
+                    width: 3vh;
+                    left: 2.3vh;
+                    top: -1px;
+                    background-color: white;
+                    border: 1px black solid;
+                    transition: .4s;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+    #pontual{
+        display: block;
+    }
+    #mensal{
+        display: none;
+    }
+    #costum_amount
+    {
+        color: blue;
+        height: 10vh;
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        &::placeholder{
+            color: blue;
+        }
+    }
+    .row-identity{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1% 0;
+        .box{
+            background-color: transparent;
+            border-radius: 15px;
+            width: 23vw;
+            display: flex;
+            padding: 0 0;
+            color: blue;
+            flex-direction: column;
+            justify-content: center;
+            background-color:beige;
+            cursor: pointer;
+            .bigger{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-weight: bolder;
+                color: blue;
+            }
+            .month{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 0;
+            }
+               
+        }
+    }
+    .month{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: beige;
+        padding: 4vh 0;
+        border-radius: 15px;
+    }
+}
+
+#donate-source{
+    display: none;
+    position: relative;
+        #empresa-form{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            border: 1px solid lightblue;
+            padding: 10% 0;}
+        input{
+            width: 20%;
+            margin: 1% 0;
+
+        }
+        #particular-form{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            border: 1px solid lightblue;
+            padding: 10% 0;
+        }
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    .text-priv{
+        a{
+            color: darken($color: lightgray, $amount: 30);
+            &:hover{
+                color: lightblue;
+            }
+        }
+        color: darken($color: lightgray, $amount: 30);
+    }
+    .donate{
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        width: 25vw;
+        padding: 3vh 0;
+        z-index: 100;
+    }
+}
+
+
+.background-img {
+    position: relative;
+    margin: 0;
+    
+
+    .texto-background-img {
+        z-index: 1;
+        color: white;
+        margin: 10% auto;
+        width: 70%;
+
+        h3 {
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 55px;
+            text-align: center;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: -2%;
+        top: -50%;
+        width: 103.5%;
+        height: 700px;
+        z-index: -10;
+        padding-bottom: 30vh;
+        border-radius: 0 0 300px 300px;
+    }
+}
+#text-value{
+    display: none;
+}
+@media screen and (max-width: 780px)
+{
+    .textmenu{
+        display: none;
+    }
+    header{
+        .logo_header{
+            padding-left: 5vw;
+            height: 5vh;
+        }
+        .sandwich{
+            .menu{
+                width: 50%;
+            }
+            .donativo{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1.5em 3em;
+            }
+        }
+        
+    }
+    .background-img{
+
+        width: 102%;
+        .texto-background-img{
+            font-size: small;
+            width: 100%;
+            h1{
+                padding-top: 40%;
+                font-size: 35px;
+            }
+        }
+    }
+    .form-doar{
+        #top{
+            font-size: small;
+            justify-content: space-between;
+            .switch{
+                input{
+                    &:checked + .slider::before
+                {
+                    transform: translateX(-2vw);
+                }
+                }
+                .slider{
+                    &::before{
+                        left: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

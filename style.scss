@@ -1,0 +1,998 @@
+$titulo: sans-serif;
+$tamanho-titulo: small;
+$main-theme: #EEEEEE;
+$paragraph: #222222;
+$title-back: #08578b;
+$primaria: #0072bc;
+$font-title: 40px;
+$font-text: 20px;
+
+body {
+    font-family: $titulo;
+    font-size: $tamanho-titulo;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 1em;
+    font-size: $font-title;
+}
+
+.exterior-p {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+
+.pnecessitados {
+    background-color: $title-back;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    padding: 5% 30%;
+    gap: 0 10vh;
+
+
+    h2 {
+        color: white;
+        font-weight: bold;
+    }
+
+    p {
+        background-color: yellow;
+        max-width: 100px;
+        font-weight: bold;
+    }
+
+
+    img {
+        z-index: -1;
+        width: 100%;
+    }
+
+    button {
+
+
+        background-color: #70a035;
+        color: white;
+        font-weight: bold;
+        width: 140px;
+        height: 50px;
+        border-radius: 3%;
+        border-style: none;
+    }
+
+
+    .pnecessitado1 {
+
+        grid-column: 1/2;
+    }
+
+    .pnecessitado2 {
+
+        grid-column: 2/3;
+    }
+
+    .pnecessitado3 {
+
+        grid-column: 3/4;
+    }
+
+}
+
+
+.vermais-car {
+    justify-content: center;
+    padding: 3em 45vw;
+    background-color: $title-back;
+
+    button {
+        background-color: white;
+        color: $primaria;
+        font-weight: bold;
+        width: 140px;
+        height: 50px;
+        border-radius: 3%;
+        border-style: none;
+    }
+
+}
+
+
+.mulheresrefugiadas-box {
+    box-sizing: border-box;
+    position: relative;
+
+    .interact-donativos{
+        position: absolute;
+      
+       button{
+        width: 200px;
+        height: 30px;
+        border-radius: 2.5%;
+    }
+        .donativo{
+            background-color: #70a035;
+            color: white;
+            border-style: none;
+            margin-bottom: 10px;
+            
+            &:hover{
+                background-color: lighten($color:#70a035, $amount: 10);
+                transition: 0.6s ease;
+            }
+
+        }
+        .donativo-cor{
+            background-color: white;
+            color: #0072bc;
+            border-style: none;
+            margin-left: 10px;
+            &:hover{
+                background-color: darken($color:white, $amount: 10);
+                transition: 0.6s ease;
+            }
+    
+
+        }
+    
+    }
+
+    img {
+        z-index: -1;
+        max-width: 100%;
+        min-height: 40vh;
+    }
+
+    .texto {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 10vw;
+        margin-left: 30vh;
+        max-width: 33vw;
+        max-height: 20vh;
+        font-size: .3vw;
+
+
+        span {
+            font-size: large;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .interact-donativos {
+            .cor {
+
+                background-color: white;
+                font-weight: bold;
+                color: #08578b;
+                border-radius: 1px;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+    }
+
+
+}
+
+
+.compromisso-acnur {
+
+    button {
+        color: white;
+        font-weight: bold;
+        background-color: $title-back;
+        height: 40px;
+        width: 225px;
+        border-radius: 3%;
+        border-style: none;
+        margin-top: 2em;
+        margin-left: 20%;
+        transition: 0.4s ease;
+        position: absolute;
+
+        &:hover {
+            background-color: #012a46;
+
+        }
+    }
+
+    h1 {
+
+        margin-left: 20%;
+
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        margin-left: 20%;
+
+    }
+
+    .contagem {
+        margin-top: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 4em;
+        padding: 0 5vw;
+
+
+        span {
+            display: flex;
+            text-align: start;
+            font-size: 60px;
+
+        }
+
+        p {
+            text-align: left;
+            font-size: 16px;
+            margin: 0.4px;
+            padding: 1em 0;
+        }
+
+        #contagem-1 {
+            max-width: 15vw;
+        }
+
+        #contagem-2 {
+            max-width: 15vw;
+            margin: 0 5%;
+        }
+
+        #contagem-3 {
+            max-width: 15vw;
+
+        }
+    }
+}
+
+.info-donativos {
+    display: grid;
+    margin: 0 20%;
+    justify-content: center;
+    grid-row: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        color: $paragraph;
+        font-weight: bold;
+
+        &:hover {
+            color: darken($color: $primaria, $amount: 10);
+            text-decoration: underline;
+
+        }
+
+    }
+
+    img {
+        max-width: 170px;
+        max-height: 150px;
+
+    }
+
+    h3 {
+        color: $paragraph;
+        font-size: 20px;
+    }
+
+    p {
+        color: $paragraph;
+    }
+
+    .left {
+        grid-template-columns: 1/2;
+        grid-template-rows: 1/2;
+        font-size: $font-text;
+
+        .parte-1 {
+            display: flex;
+        }
+
+        .parte-2 {
+            display: flex;
+        }
+    }
+
+    .right {
+
+        grid-template-columns: 1/2;
+        grid-template-rows: 2/3;
+        font-size: $font-text;
+
+        .parte-3,
+        .parte-4 {
+            display: flex;
+        }
+
+        .parte-4 {
+            display: flex;
+        }
+    }
+}
+
+.zonas-acao {
+    text-align: left;
+    font-size: larger;
+    margin-bottom: 0px;
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
+
+    #espacamento-divisao {
+        padding: 10vh;
+        padding-left: 3%;
+    }
+
+    #info {
+        position: relative;
+
+        img {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 55vh;
+        }
+
+        h2 {
+            padding-left: 1.5em;
+            font-size: $font-title;
+            max-width: 500px;
+        }
+
+        p {
+            padding-left: 3em;
+            font-size: $font-text;
+            max-width: 500px;
+        }
+
+        #locais {
+            a {
+                p {
+                    color: $font-text;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                color: $title-back;
+                font-weight: bold;
+                display: inline;
+            }
+        }
+
+        .ver-zonas {
+            margin-left: 80%;
+            margin-top: 0%;
+
+            button {
+                background-color: $title-back;
+                font-weight: bold;
+                color: white;
+                height: 40px;
+                width: 225px;
+                border-style: none;
+                border-radius: 0.5em;
+
+
+                &:hover {
+                    font-weight: bold;
+                    background-color: #012a46;
+                    transition: 0.4s ease;
+                }
+            }
+
+        }
+    }
+}
+
+section {
+
+    box-sizing: border-box;
+    background-color: $main-theme;
+    padding-bottom: 0px;
+    
+
+    p {
+        padding-top: 5%;
+        max-width: 700px;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        margin: 0 0 1rem;
+    }
+
+    .slidesimage-container {
+        max-width: 80%;
+        position: relative;
+
+        .anterior,
+        .seguinte {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            margin-top: -22px;
+            color: #007bff;
+            font-size: 18px;
+            transition: 0.4s ease;
+            border-radius: 40px 100px 100px 100px;
+
+            background-color: white;
+        }
+
+        .seguinte {
+            right: -12vw;
+        }
+
+        .anterior {
+            margin-left: 20%;
+        }
+
+        .imageslider {
+            display: none;
+        }
+
+        .sizing {
+            font-size: 2.7vw;
+        }
+
+        p {
+            text-align: center;
+            margin-left: 45%;
+        }
+
+        .text-author {
+            font-size: 17px;
+            margin: 0 0 0 51.5%;
+        }
+    }
+
+}
+
+.formatacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .img-desastre {
+
+        width: 25vw;
+        box-sizing: border-box;
+        border-bottom: 1px solid $main-theme;
+        object-fit: cover;
+        margin: 1px 1%;
+        justify-content: space-between;
+        overflow: hidden;
+        font-size: 15px;
+        height: 30%;
+        margin-top: 10%;
+
+        div {
+            overflow: hidden;
+        }
+
+
+        img {
+            border-radius: 0.4em;
+            width: 100%;
+            transition: 0.4s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                filter: grayscale(0.3);
+            }
+        }
+    }
+
+    p {
+        font-size: 17px;
+
+        &:hover {
+
+            font-weight: bold;
+            transition: ease-in;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $paragraph;
+    }
+
+    span {
+        font-weight: bold;
+        color: gray;
+        font-size: smaller;
+    }
+
+    p {
+        span {
+            color: $primaria;
+            font-size: large;
+
+
+        }
+    }
+}
+
+
+
+
+.informacao {
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: none;
+    text-align: center;
+    background-color: $main-theme;
+
+
+    p:first-of-type {
+        padding: 0.4em;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+
+    label {
+        position: relative;
+
+        .check-informacao {
+            span {
+                font-size: 13px;
+                font-weight: bold;
+
+                span {
+                    &:hover {
+                        color: $title-back;
+                        transition: 0.4s ease;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .inscrever {
+        width: 115px;
+        height: 50px;
+        right: 8.5%;
+        background-color: lighten(gray, 15);
+        color: white;
+        border-radius: 0.4em;
+        border: transparent;
+        font-weight: bolder;
+        font-size: 13px;
+    }
+}
+
+#email {
+    position: relative;
+    padding: 3%;
+}
+
+input[type=email] {
+    background-color: white;
+    width: 360px;
+    padding: 0 16px;
+    height: 50px;
+    justify-content: center;
+    border-style: none;
+    border-radius: 0.4em;
+}
+
+footer {
+
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+    margin: 2% 0;
+
+    .pacnur-logo {
+
+        .c_comercial {
+            text-decoration: none;
+            color: $paragraph;
+
+            p {
+
+                margin-left: 10vw;
+                max-width: 100%;
+                margin-top: 5vh;
+                font-family: sans-serif;
+                font-size: smaller;
+
+                span {
+                    color: $main-theme;
+                }
+            }
+        }
+
+        img {
+
+            margin-left: 10vw;
+            width: 15vw;
+            margin-top: 5vh;
+
+        }
+    }
+
+    .curiosidades {
+        display: flex;
+        flex-direction: wrap;
+        padding: 0px;
+        margin: 0 5vw;
+
+        p {
+
+            object-fit: cover;
+            color: $primaria;
+            font-weight: bold;
+            transition: 0s color;
+            font-size: larger;
+            border-bottom: 1px solid $main-theme;
+
+            &:hover {
+                color: $title-back;
+                transition: 0.4s ease;
+
+                span {
+                    color: $title-back;
+                    font-weight: bolder;
+                    left: 2%;
+                    transition: 0.4s ease;
+                    font-size: 10px;
+
+                }
+            }
+
+            span {
+                font-weight: bolder;
+                font-size: 10px;
+
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $paragraph;
+            font-weight: bold;
+            transition: 0s color;
+
+            &:hover {
+                color: #17a2b8;
+                transition: 0.4s ease;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0.8em;
+            line-height: 1.6rem;
+
+        }
+
+        li {
+            list-style-type: none;
+            padding: 0.8em;
+            line-height: 1.6rem;
+            font-size: 15px;
+            padding-left: 0.1em;
+        }
+
+        ul {
+            padding: 2em;
+        }
+    }
+
+}
+
+
+.rodape {
+
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 1vh 3vh;
+    background-color: $paragraph;
+    justify-content: space-around;
+
+    .icones {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 3vh;
+
+        #linkedin {
+            padding-right: 0;
+        }
+
+        a {
+            max-width: 3%;
+            max-height: 3%;
+            padding: 1vh 1.5vw;
+
+
+            img {
+                width: 4vh;
+
+
+
+                &:hover {
+                    transform: scale(0.9);
+                    filter: grayscale(0.2);
+                    transition: 0.4s ease;
+
+                }
+            }
+        }
+    }
+}
+
+.politicas {
+    display: flex;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    flex-direction: row;
+
+    #P1,
+    #P2,
+    #P3 {
+
+        width: 20vh;
+        margin-left: 10px;
+        padding-top: 2vw;
+
+        &:hover {
+            color: $main-theme;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    body {
+
+        overflow-x: hidden;
+    }
+
+    .info-donativos {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .zonas-acao {
+
+        #info {
+
+            img {
+
+                height: 40vh;
+            }
+        }
+
+        button {
+            display: none;
+        }
+
+        a {
+            padding-top: 2vh;
+            padding-bottom: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid $main-theme;
+
+        }
+
+        img {
+            width: 100vh;
+            height: 29vh;
+        }
+    }
+
+    .informacao {
+        button {
+            display: none;
+        }
+    }
+
+    .formatacao {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+
+
+        .img-desastre {
+            display: grid;
+            width: 70vh;
+
+
+            p {
+                font-size: 20px;
+                margin-right: 5%;
+            }
+
+
+            img {
+                width: 70vh;
+                height: 40vh;
+
+            }
+        }
+    }
+
+    .compromisso-acnur {
+
+        .media-compromisso {
+
+            h1,
+            p,
+            button {
+                margin: 0 7vw;
+            }
+
+            h1 {
+                margin-bottom: 15px;
+            }
+
+            button {
+                margin-top: 30px;
+            }
+        }
+
+        .contagem {
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 25vw;
+            margin-top: 25%;
+
+
+            p {
+                font-size: 20px;
+            }
+
+            #contagem-2 {
+                margin: 0 0;
+
+                p {
+                    width: 300px;
+
+                }
+
+            }
+
+            #contagem-1 {
+
+                p {
+                    width: 280px;
+                }
+
+            }
+
+            #contagem-3 {
+
+                p {
+
+                    width: 200px;
+                }
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        span {
+            #fomatacao-ano {
+                content: "";
+            }
+        }
+
+        .curiosidades {
+
+            display: flex;
+            flex-direction: column;
+            padding-top: 40%;
+
+            margin: 0 0;
+            margin-left: -14vh;
+
+        }
+
+    }
+.section{
+    height: 30vh;
+    .slidesimage-container {
+        position: absolute;
+       
+
+        .imageslider {
+            max-width: 500px;
+
+            p {
+                line-height: 6vh;
+                font-size: 15px;
+                margin-right: 10px;
+            }
+
+            .text-author {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+    .pnecessitados {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30vw;
+
+        width: 100%;
+
+
+    }
+
+    .rodape {
+        display: block;
+
+        img {
+            margin-left: 1300%;
+            border-style: 1px solid $main-theme;
+            content: "";
+        }
+
+        .politicas {
+            margin-left: 60px;
+        }
+    }
+
+    .mulheresrefugiadas-box {
+
+        .interact-donativos{
+            position: absolute;
+            .donativo-cor{
+            margin-left: 0;
+            }
+        }
+        .texto {
+            margin-left: 4vh;
+
+            p {
+                font-size: 22px;
+            }
+        }
+    }
+}
